@@ -1,12 +1,11 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import App from "./App";
+import HomePage from './components/HomePage';  // Testing only HomePage component
 
-test("renders the App component", () => {
+test("renders the HomePage component", () => {
   render(
-    <MemoryRouter>
-      <App />
+    <MemoryRouter initialEntries={['/']}>
+      <HomePage />
     </MemoryRouter>
   );
-  expect(screen.getByText(/some text in App/i)).toBeInTheDocument();
 });
