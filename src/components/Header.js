@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Header.css';
 
 const Header = () => {
   return (
     <header>
-      <img src="logo.png" alt="Little Lemon Logo" className='logo' />
+      <img src="logo.svg" alt="Little Lemon Logo" className='logo' />
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
