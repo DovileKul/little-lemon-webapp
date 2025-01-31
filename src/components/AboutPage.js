@@ -10,8 +10,10 @@ const AboutPage = () => {
        <div className="about-text">
       <h2>About Little Lemon</h2>
       <p>
-        At Little Lemon, we celebrate Mediterranean flavors with fresh, locally-sourced ingredients in every dish. 
-        Our warm, family-friendly atmosphere is perfect for casual meals or special occasions.
+      At Little Lemon, we celebrate Mediterranean flavors with fresh, 
+      <br/>locally-sourced ingredients in every dish. Our warm, family-friendly<br/> atmosphere is 
+      perfect for casual meals or special occasions.<br/> Whether it’s a zesty salad, hearty grill, 
+      or a sweet treat, every visit <br/>is a memorable experience.
       </p>
       </div>
       <div className="about-images">

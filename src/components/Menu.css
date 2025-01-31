@@ -1,6 +1,6 @@
 .menu {
-  padding-top: 2rem;
-    text-align: center;
+  padding-top: 5rem;
+  text-align: center;
 }
 
 .menu-items {
@@ -15,9 +15,16 @@
     background-color: #EDEFEE;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0.1);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .menu-item img {
@@ -49,6 +56,7 @@
 }
 
 .online-menu-button {
+  margin-top: 5rem;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     background-color: #F4CE14;
@@ -56,6 +64,10 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #E3BE13;
 }
 
 h2 {

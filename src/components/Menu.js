@@ -11,7 +11,7 @@ const Menu = () => {
         { name: 'Greek Salad', description: 'Cheese, fresh cucumbers, ripe tomatoes, red onions, Kalamata olives, green peppers, olive oil, and oregano.', price: '$10', image: greekSalad },
         { name: 'Bruschetta', description: 'Crispy toasted bread topped with fresh tomatoes, garlic, basil, olive oil, and a drizzle of balsamic glaze.', price: '$12', image: bruschetta},
         { name: 'Spaghetti Tomato', description: 'Classic spaghetti tossed in a rich tomato sauce with garlic, olive oil, fresh basil, and grated Parmesan.', price: '$15', image: spaghettiTomato},
-        { name: 'Lemon Tart', description: 'Buttery tart crust filled with tangy lemon custard, topped with a dusting of powdered sugar and a slice of fresh lemon.', price: '$8', image: lemonTart},
+        { name: 'Lemon Tart', description: 'Buttery tart crust filled with tangy lemon custard, topped with a dusting of powdered sugar and a lemon.', price: '$8', image: lemonTart},
     ];
 
 
