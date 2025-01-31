@@ -1,5 +1,6 @@
 import React from 'react';
 import BookingForm from '../components/BookingForm';
+import './Reservations.css';
 
 const Reservations = () => {
   const availableTimes = ["12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM"];
@@ -9,9 +10,11 @@ const Reservations = () => {
   };
 
   return (
-    <div>
-      <h2>Make a Reservation</h2>
-      <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
+    <div className="reservations-page">
+      <h2 className="reservations-title">Make a Reservation</h2>
+      <div className="reservations-container">
+        <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
+      </div>
     </div>
   );
 };

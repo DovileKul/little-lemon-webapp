@@ -1,0 +1,62 @@
+.homepage {
+    padding-top: 2rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .cta-content {
+    max-width: 500px;
+  }
+
+  .cta h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #495E57;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #E3BE13;
+  }
+
+  .header-images {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.header-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+

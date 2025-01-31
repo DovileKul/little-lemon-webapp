@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import './BookingForm.css';
 
-// Simulate fetchAPI function (you can adjust this as needed)
 const fetchAPI = async (selectedDate) => {
-  // Return some mock available times
   return ['6:00 PM', '7:00 PM', '8:00 PM'];
 };
 
@@ -19,7 +18,7 @@ const BookingForm = ({ availableTimes, updateTimes }) => {
     setDate(selectedDate);
     
     fetchAPI(selectedDate).then((times) => {
-      updateTimes(times); // Update available times based on the selected date
+      updateTimes(times);
     });
   };
 
