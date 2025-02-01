@@ -1,21 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
-
 const Header = () => {
+  const location = useLocation();
+  const isAuthPage = location.pathname === '/login' || location.pathname === '/reservations';
+  
   return (
     <header>
       <div className="header-content">
       <img src="logo.svg" alt="Little Lemon Logo" className='logo' />
       <nav>
         <ul>
-          <li><a href="#">Home</a></li> 
-          <li><a href="/reservations">Reservations</a></li>
+        <li><Link to="/">Home</Link></li>  
+        {!isAuthPage && (
+          <>
+          <li><Link to="/reservations">Reservations</Link></li>
           <li><a href="#menu">Menu</a></li> 
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#about">About</a></li> 
-          <li><a href="/login">Login</a></li>
+          <li><Link to="/login">Login</Link></li>
+          </>
+        )}
         </ul>
       </nav>
       </div>

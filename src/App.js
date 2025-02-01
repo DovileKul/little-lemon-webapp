@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 import TestimonialsPage from './components/TestimonialsPage';
 import Reservations from './components/Reservations';
 import AboutPage from './components/AboutPage';
+import Login from './components/Login';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/reservations" element={<Reservations />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <Footer />

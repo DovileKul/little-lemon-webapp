@@ -13,7 +13,7 @@ const TestimonialsPage = () => {
 
   return (
     <section className="testimonials-page">
-      <h2>What Customers Say?</h2>
+      <h2>Your Words, Our Pride</h2>
       <div className="reviews-container">
         {reviews.map((review, index) => (
           <div key={index} className='review-item'>

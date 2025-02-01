@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body::before {
@@ -20,6 +21,7 @@ body::before {
   z-index: -1; 
 }
 
+
 .menu::before {
   content: "";
   position: absolute;
@@ -32,14 +34,14 @@ body::before {
   z-index: -1;
 }
 
-.footer::before {
+.about-page::before {
   content: "";
   position: absolute;
-  width: 1000px; 
+  width: 1000px;
   height: 1000px;
-  background: #F4CE14; 
+  background: #F4CE14;
   border-radius: 50%;
-  top: 1580px; 
+  top: 1850px;
   left: -500px;
   z-index: -1;
 }
@@ -91,6 +93,7 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+
 }
 
 .header-img {
@@ -98,7 +101,13 @@ html {
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-img:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
 
