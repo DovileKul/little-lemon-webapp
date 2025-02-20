@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import headerImage1 from '../assets/header-1.jpg';
 import headerImage2 from '../assets/header-2.jpg';
 import Menu from './Menu';
@@ -9,6 +10,8 @@ import './HomePage.css';
 
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="homepage">
       <section className="cta">
@@ -21,7 +24,7 @@ const HomePage = () => {
         Whether it's a family gathering or a casual meal, book now for a cozy, 
         welcoming atmosphere that’s perfect for any occasion.
         </p>
-        <button onClick={() => window.location.href = '/reservations'}>Reserve a Table</button>
+        <button onClick={() => navigate('/reservations')}>Reserve a Table</button>
         </div>
         <div className='header-images'>
         <img src={headerImage1} alt="Header image 1" className="header-img" />
