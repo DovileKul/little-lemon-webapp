@@ -4,6 +4,7 @@ import headerImage2 from '../assets/header-2.jpg';
 import Menu from './Menu';
 import TestimonialsPage from './TestimonialsPage';
 import AboutPage from './AboutPage';
+import Reservations from './Reservations';
 import './HomePage.css';
 
 
