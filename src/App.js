@@ -11,7 +11,7 @@ import Login from './components/Login';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/little-lemon-webapp">
       <Header />
       <main>
         <Routes>

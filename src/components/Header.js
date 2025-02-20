@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/Logo.svg';
 import './Header.css';
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <div className="header-content">
-      <img src="/Logo.svg" alt="Little Lemon Logo" className="logo" />
+      <img src={logo} alt="Little Lemon Logo" className="logo" />
       <nav>
         <ul>
         <li><Link to="/">Home</Link></li>  
