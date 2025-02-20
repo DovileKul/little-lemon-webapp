@@ -2,6 +2,7 @@
   "name": "little-lemon-restaurant",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://dovilekul.github.io/little-lemon-webapp",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -38,6 +39,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.6.1",
+    "gh-pages": "^6.3.0",
     "jest": "^27.5.1"
   }
 }
