@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className="header-content">
-      <img src="logo.svg" alt="Little Lemon Logo" className='logo' />
+      <img src="/Logo.svg" alt="Little Lemon Logo" className="logo" />
       <nav>
         <ul>
         <li><Link to="/">Home</Link></li>  
